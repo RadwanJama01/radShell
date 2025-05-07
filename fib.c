@@ -60,6 +60,7 @@ static void doFib (int n, int doPrint) {
       }
       exit(n); //this is our fib number
     } 
+    printf("PID %d computing fib(%d)\n", getpid(), n);
 
     pid_t left = fork();
     if (left<0){
